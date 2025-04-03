@@ -17,7 +17,7 @@ async function bootstrap() {
     );
     app.useGlobalFilters(new RpcCustomExceptionFilter());
     await app.listen(envs.server.port ?? 3000);
-    console.log('Hola mundo, primer cambio');
+    console.log('Hola mundo, segundo cambio');
     logger.log(
       `🚀 Gateway is running on: http://localhost:${envs.server.port}`,
     );
